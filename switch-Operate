@@ -1,0 +1,58 @@
+public class 计算 {
+    public static void main(String[] args){
+        System.out.println("欢迎使用本计算系统");
+        java.util.Scanner s=new java.util.Scanner(System.in);
+        System.out.println("请输入第一个数字");
+        int num1=s.nextInt();
+        System.out.println("请输入运算符");
+        String 运算符 =s.next();
+        System.out.println("请输入第二个数字");
+        int num2=s.nextInt();
+
+        int result=0;
+        switch (运算符){
+            case  "+":
+                 result=num1+num2;
+                  break;
+            case  "-":
+                 result=num1-num2;
+                 break;
+            case   "*":
+                 result=num1*num2;
+                 break;
+            case   "/":
+                 result=num1/num1;
+                 break;}
+        System.out.println("运算结果为"+num1+运算符+num2+"="+result);
+
+
+    }
+}
+利用switch来转换等级
+{
+    public static void main(String[] args) {
+        java.util.Scanner s = new java.util.Scanner(System.in);
+        System.out.println("考生成绩");
+        Double score = s.nextDouble();
+        int grade = (int) (score / 10);
+         switch (grade){
+             case 9: case 10:
+             System.out.println("您的成绩等级为a");
+             break;
+             case 8:
+                 System.out.println("您的成绩等级为b");
+                 break;
+             case 7:
+                 System.out.println("您的成绩等级为c");
+                 break;
+             case 6:
+                 System.out.println("您的成绩等级为d");
+                 break;
+             default:
+                 System.out.println("您的成绩等级为e");
+
+         }
+
+
+}
+}
